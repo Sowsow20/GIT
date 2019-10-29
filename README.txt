@@ -1,0 +1,1 @@
+ce projet consiste à créer un ou des fichiers html qui correspondent à de simple pages webs, et cela dans le but d'appliquer les principales notions  de gestion de version du code que j'ai apprise sur le site openclassrooms.

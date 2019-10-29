@@ -3,6 +3,7 @@
 <head>
 	<title > GitHub </title>
 	<meta charset="utf-8">
+	<link type="text/css" rel="stylesheet" href="file.css" />
 </head>
 <body>
 <h1>GitHub, Qu'est-ce que c'est?</h1>
@@ -12,17 +13,27 @@ GitHub est un service  d'hébergement de repository de code en ligne, c’est un
 	<ol>
 		<li>Pour cela il suffit de créer un nouveau dossier.</li>
 		<li>Ouvrir la console dans le dossier </li>
-		<li>Git init</li>
-		<li>git add nomFichier.extension</li>
-		<li>git commit -m "message à afficher"</li> 
+		<li><span class="commandeBackCol">Git init</span></li>
+		<li><span class="commandeBackCol">git add nomFichier.extension</span></li>
+		<li><span class="commandeBackCol">git commit -m "message à afficher"</span></li> 
 	</ol>
 
 <h1>Récupérer votre code depuis GitHub vers votre machine locale </h1>
 La récupération de code depuis GitHub se fait avec la commande suivante:
-git clone lienFourniParGitHub
+<span class="commandeBackCol">git clone lienFourniParGitHub</span>
 
 <h1>Mettre votre code sur GitHub </h1>
-L'envoie du code se fait grâce à cette commande : git push origin master
+L'envoie du code se fait grâce à cette commande : <span class="commandeBackCol">git push origin master</span>
 <br>cette commande demande à Git d'envoyer les modifications du code dans la branche master du remote origin(GitHub). 
+
+<h1>Créer des branches</h1>
+
+Un élément que vous allez être souvent amenés à utiliser lorsque vous travaillez sur un repo, ce sont les branches. Les branches permettent de travailler sur des versions de code qui divergent de la branche principale contenant votre code courant.<br>
+Créer des branches est très utiles lorqu'on veut tester de nouvelles expérimentations sur le projet en cours ou si on souhaite développer une fonctionnalité spécifique. Voyons les commandes Git qui vous permettent de manipuler les branche. Lorsque vous initialisez un repo Git, votre code est placé dans la branche principale appelée master par défaut.<br> 
+Pour voir les branches présentes dans votre repo, utilisez la commande git branch. Elle vous retournera les branches présentes, et ajoutera une étoile devant la branche dans laquelle vous êtes placés. Par exemple, dans le 1er repos que vous avez créé dans la partie précédente, la commande git branch n'affichera qu'une seule branche, la branche principale dans laquelle vous vous situez : * master. <br>
+Pour créer une nouvelle branche, il vous suffit d'ajouter le nom de la branche à créer à la suite de la commande précédente :<span class="commandeBackCol">git branch nouvelle-branche</span><br>
+ Pour vous placer dans une autre branche à l'intérieur de votre repo, vous allez avoir besoin d'un nouveau mot-clé : checkout : <span class="commandeBackCol">git checkout nouvelle-branche</span><br>
+ Pour créer et se positionner dans la nouvelle branche on peut utiliser les deux commandes précedentes comme on peut utiliser directement la commande suivante:
+<span class="commandeBackCol">git checkout -b ma-branche</span>
 </body>
-</html>
+</html>	
